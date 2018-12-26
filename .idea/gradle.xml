@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/GSDK" />
+            <option value="$PROJECT_DIR$/RoutingDemoFeignApplication" />
+            <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/feign" />
+            <option value="$PROJECT_DIR$/ribbon-support" />
+            <option value="$PROJECT_DIR$/service-api" />
+            <option value="$PROJECT_DIR$/service-consumer" />
+            <option value="$PROJECT_DIR$/service-provider" />
+            <option value="$PROJECT_DIR$/shopping-mall" />
+            <option value="$PROJECT_DIR$/zuul-support" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

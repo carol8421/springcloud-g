@@ -1,0 +1,28 @@
+group 'com.gsdk'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    //注册中心服务端的组件
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
+}
+

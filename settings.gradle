@@ -1,0 +1,12 @@
+rootProject.name = 'springcloud-gaofei'
+include 'eureka-server'
+include 'shopping-mall'
+include 'GSDK'
+include 'RoutingDemoFeignApplication'
+include 'service-api'
+include 'service-consumer'
+include 'service-provider'
+include 'zuul-support'
+include 'ribbon-support'
+include 'feign'
+
