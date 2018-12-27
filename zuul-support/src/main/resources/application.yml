@@ -14,4 +14,4 @@ zuul:
       serviceId: ribbon
     service2:
       path: /service2/**
-      serviceId: feign
+      serviceId: feign-support

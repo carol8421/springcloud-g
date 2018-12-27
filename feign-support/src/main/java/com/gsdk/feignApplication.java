@@ -15,17 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class HelloServerApplication {
+public class feignApplication {
     @Autowired
     DiscoveryClient client;
 
     @RequestMapping("/")
     public String hello() {
         ServiceInstance localInstance = client.getLocalServiceInstance();
-        return "Hello World: "+ localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort();
+        return "Hello World: " + localInstance.getServiceId() + ":" + localInstance.getHost() + ":" + localInstance.getPort();
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloServerApplication.class, args);
+
+        SpringApplication.run(feignApplication.class, args);
     }
 }

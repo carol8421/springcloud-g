@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/RoutingDemoFeignApplication" />
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/feign" />
+            <option value="$PROJECT_DIR$/feign-support" />
             <option value="$PROJECT_DIR$/ribbon-support" />
             <option value="$PROJECT_DIR$/service-api" />
             <option value="$PROJECT_DIR$/service-consumer" />

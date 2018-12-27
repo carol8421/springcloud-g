@@ -22,7 +22,7 @@ import com.netflix.hystrix.HystrixCommandGroupKey;
 //@EnableEurekaClient
 @RestController
 @EnableDiscoveryClient
-public class ApplicationCenter {
+public class HystrixServiceCenter {
 
     //        volatile int abc = 0;
 
@@ -44,6 +44,6 @@ public class ApplicationCenter {
         return "Hello me";
     }
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ApplicationCenter.class).web(true).run(args);
+        new SpringApplicationBuilder(HystrixServiceCenter.class).web(true).run(args);
     }
 }

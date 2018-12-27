@@ -1,38 +1,18 @@
-buildscript {
-    repositories {
-        maven {
-            url "http://maven.aliyun.com/nexus/content/groups/public/"
-        }
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE")
-    }
-}
 plugins {
     id 'java'
 }
 
 group 'com.gsdk'
 version '1.0-SNAPSHOT'
-apply plugin: 'spring-boot'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Dalston.RELEASE"
-    }
-}
+
 dependencies {
-    compile 'org.projectlombok:lombok'
     compile "org.springframework.cloud:spring-cloud-starter-feign"
     compile "org.springframework.cloud:spring-cloud-starter-eureka"
-//    compile 'org.springframework.cloud:spring-cloud-starter-zuul'
-    compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
-//    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 }

@@ -24,4 +24,8 @@ public class HelloController {
     public String hi(@PathVariable String name) {
         return helloService.hello(name);
     }
+    @RequestMapping("/h")
+    public String h() {
+        return "Hello ribbon";
+    }
 }

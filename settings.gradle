@@ -9,4 +9,5 @@ include 'service-provider'
 include 'zuul-support'
 include 'ribbon-support'
 include 'feign'
+include 'feign-support'
 

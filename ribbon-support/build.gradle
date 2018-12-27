@@ -15,6 +15,7 @@ plugins {
 group 'com.gsdk'
 version '1.0-SNAPSHOT'
 apply plugin: 'spring-boot'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.8
 
@@ -27,10 +28,15 @@ dependencyManagement {
     }
 }
 dependencies {
-    compile 'org.projectlombok:lombok'
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+//    compile 'org.projectlombok:lombok'
+//    compile 'org.apache.httpcomponents:httpcore'
+//    compile 'org.apache.httpcomponents:httpclient'
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     compile "org.springframework.cloud:spring-cloud-starter-hystrix"
     compile "org.springframework.cloud:spring-cloud-starter-hystrix-dashboard"
     compile "org.springframework.cloud:spring-cloud-starter-eureka"
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
 //    compile 'org.springframework.cloud:spring-cloud-starter-zuul'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-web'
