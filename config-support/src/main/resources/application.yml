@@ -1,8 +1,11 @@
 server:
   port: 8888
 spring:
+  application:
+    name: config-support
   cloud:
     config:
       server:
         git:
           uri: https://github.com/dingjianglei/repos-microservices-app-config
+#          uri: https://github.com/carol8421/sampledata

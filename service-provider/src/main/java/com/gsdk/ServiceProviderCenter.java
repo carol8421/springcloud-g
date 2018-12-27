@@ -26,6 +26,10 @@ public class ServiceProviderCenter {
         return "Hello World: "+ localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort();
     }
 
+    @RequestMapping("/lamda")
+    public String lamda() {
+        return LambdaLearning.PrintSample();
+    }
     public static void main(String[] args) {
         SpringApplication.run(ServiceProviderCenter.class, args);
     }

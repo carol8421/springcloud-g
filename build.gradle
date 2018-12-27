@@ -26,12 +26,12 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
 //设定当前所有的项目的配置
 allprojects {
-    group 'com.ssx'
+    group 'com.gsdk'
     version '1.0-SNAPSHOT'
 
     ext {
@@ -53,7 +53,7 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
-    apply plugin: 'spring-boot'
+    apply plugin: 'org.springframework.boot'
     dependencies {
         //使用springboot-web组件，但是排除tomcat组件
         compile ('org.springframework.boot:spring-boot-starter-web'){

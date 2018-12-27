@@ -27,6 +27,11 @@ public class ServiceApiCenter {
         return client.hello();
     }
 
+    @RequestMapping("/l")
+    public String lamda() {
+        return client.lamda();
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(ServiceApiCenter.class, args);
     }
@@ -35,6 +40,9 @@ public class ServiceApiCenter {
     interface HelloClient {
         @RequestMapping(value = "/", method = GET)
         String hello();
+
+        @RequestMapping(value = "/lamda", method = GET)
+        String lamda();
     }
 }
 

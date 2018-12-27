@@ -27,6 +27,14 @@ dependencies {
 //    version '1.0-SNAPSHOT'
 //    apply plugin: 'spring-boot'
     //thymeleaf组件
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    compile "org.springframework.cloud:spring-cloud-starter-hystrix"
+    compile "org.springframework.cloud:spring-cloud-starter-hystrix-dashboard"
+    compile "org.springframework.cloud:spring-cloud-starter-eureka"
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+//    compile 'org.springframework.cloud:spring-cloud-starter-zuul'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-starter-web'
     compile  'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile group: 'com.netflix.hystrix', name: 'hystrix-core', version: '1.5.10'
     //eureka客户端组件
