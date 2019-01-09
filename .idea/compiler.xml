@@ -5,6 +5,8 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.gsdk-Hystrix-support_main" target="1.8" />
+      <module name="com.gsdk-Hystrix-support_test" target="1.8" />
       <module name="Hystrix-support_main" target="1.8" />
       <module name="Hystrix-support_test" target="1.8" />
       <module name="springcloud-gaofei_main" target="1.8" />

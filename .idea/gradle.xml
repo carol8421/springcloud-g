@@ -10,8 +10,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ConsulServerA" />
             <option value="$PROJECT_DIR$/GSDK" />
-            <option value="$PROJECT_DIR$/Hystrix-support" />
             <option value="$PROJECT_DIR$/RoutingDemoFeignApplication" />
             <option value="$PROJECT_DIR$/config-support" />
             <option value="$PROJECT_DIR$/eureka-server" />
