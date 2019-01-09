@@ -4,5 +4,11 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hystrix-support_main" target="1.8" />
+      <module name="Hystrix-support_test" target="1.8" />
+      <module name="springcloud-gaofei_main" target="1.8" />
+      <module name="springcloud-gaofei_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

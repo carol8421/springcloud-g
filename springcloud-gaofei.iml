@@ -11,10 +11,5 @@
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/META-INF/persistence.xml" />
       </configuration>
     </facet>
-    <facet type="android-gradle" name="Android-Gradle">
-      <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":" />
-      </configuration>
-    </facet>
   </component>
 </module>

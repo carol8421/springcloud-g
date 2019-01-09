@@ -1,4 +1,4 @@
-rootProject.name = 'springcloud-gaofei'
+rootProject.name = 'springcloud-gsdk'
 include 'eureka-server'
 include 'shopping-mall'
 include 'GSDK'
@@ -12,4 +12,5 @@ include 'feign'
 include 'feign-support'
 include 'config-support'
 include 'sample'
+include 'Hystrix-support'
 
