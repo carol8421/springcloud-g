@@ -13,4 +13,4 @@ include 'feign-support'
 include 'config-support'
 include 'sample'
 include 'Hystrix-support'
-
+include 'ConsulServerA'
