@@ -12,7 +12,5 @@ include 'feign'
 include 'feign-support'
 include 'config-support'
 include 'sample'
-//include 'Hystrix-support'
-include 'ConsulServerA'
-findProject(':ConsulServerA')?.name = 'ConsulServer'
+include 'Hystrix-support'
 
